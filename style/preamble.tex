@@ -74,10 +74,6 @@
   tabsize=2                              % sets default tabsize to 2 spaces
 }
 
-\makeatletter
-\lst@InstallKeywords k{attributes}{attributestyle}\slshape{attributestyle}{}ld
-\makeatother
-
 % C# Code Blocks
 %\setmonofont{Consolas} %to be used with XeLaTeX or LuaLaTeX
 \definecolor{bluekeywords}{rgb}{0,0,1}
@@ -100,8 +96,8 @@
     escapeinside={(*@}{@*)},
     commentstyle=\color{greencomments},
     morekeywords={partial, var, value, get, set, async},
-    moreattributes={Fact, Test}, % etc...
-    attributestyle = \bfseries\color{RubineRed}, % (for instance)
+    otherkeywords={Fact, Test}, % etc...
+    keywordstyle=\color{weborange},
     keywordstyle=\color{bluekeywords},
     stringstyle=\color{redstrings},
     basicstyle=\ttfamily\small,
