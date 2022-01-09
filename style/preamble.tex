@@ -81,6 +81,7 @@
 \definecolor{redstrings}{rgb}{0.64,0.08,0.08}
 \definecolor{xmlcomments}{rgb}{0.5,0.5,0.5}
 \definecolor{types}{rgb}{0.17,0.57,0.68}
+\definecolor{objects}{RGB}{66,174,155}
 
 \usepackage{listings}
   \lstset{language=[Sharp]C,
@@ -96,8 +97,8 @@
     escapeinside={(*@}{@*)},
     commentstyle=\color{greencomments},
     morekeywords={partial, var, value, get, set, async},
-    otherkeywords={Fact, Test}, % etc...
-    keywordstyle=\color{types},
+    otherkeywords={\[Fact\], \[Test\]}, % etc...
+    keywordstyle=\color{objects},
     keywordstyle=\color{bluekeywords},
     stringstyle=\color{redstrings},
     basicstyle=\ttfamily\small
